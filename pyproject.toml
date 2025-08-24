@@ -1,0 +1,8 @@
+[project]
+name = "repro"
+dependencies = [
+  "dbt-core>=1.10.5",
+  "dbt-snowflake>=1.10",
+  # Change to 3.17 to see the issue.
+  "snowflake-connector-python==3.16",
+]
